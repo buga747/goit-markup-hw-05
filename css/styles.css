@@ -624,7 +624,7 @@ ul {
     position: relative;
     left: 50%;
     top: 50%;
-
+    display: inline-block;
     width: 528px;
     height: 581px;
 
