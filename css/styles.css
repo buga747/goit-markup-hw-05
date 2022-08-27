@@ -21,7 +21,7 @@
 
     /* Others */
     --border-radius: 4px;
-    --trans-dur: 3s;
+    --trans-dur: 250ms;
     --trans-t-funct: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -613,6 +613,7 @@ ul {
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
+    visibility: visible;
 }
 
 .backdrop.is-hidden .modal-box {
