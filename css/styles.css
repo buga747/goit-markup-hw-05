@@ -170,8 +170,8 @@ ul {
 
 }
 
-.nav .link:hover,
-.nav .link:focus {
+.nav-link:hover,
+.nav-link:focus {
     color: var(--accent-color);
 }
 
@@ -186,10 +186,6 @@ ul {
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
-
-/* .contacts-header .item:not(:last-child) {
-    margin-right: 50px;
-} */
 
 .contacts-header .link {
     display: inline-flex;
@@ -214,7 +210,6 @@ ul {
     fill: currentColor;
 }
 
-
 /**
   |============================
   | Герой
@@ -230,13 +225,13 @@ ul {
 
     background-image:
         linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/background-image/hero-background-image.jpg);
+        url(../images/hero/hero-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    /* width: 1600px; */
     margin-left: auto;
     margin-right: auto;
+    max-width: 1600px;
 }
 
 .main-title {
@@ -468,15 +463,11 @@ ul {
     border: 1px solid var(--icons-color);
     border-radius: var(--border-radius);
     width: 170px;
+    height: 92px;
     fill: var(--icons-color);
     transition: border-color var(--trans-dur) var(--trans-t-funct), fill var(--trans-dur) var(--trans-t-funct);
 }
 
-.clients-icon {
-    margin-top: 16px;
-    margin-bottom: 16px;
-
-}
 
 .clients-item .link:hover,
 .clients-item .link:focus {
@@ -503,11 +494,10 @@ ul {
 
 .footer-logo {
     color: var(--primary-white-color);
-    transition: color var(--trans-dur) var(--trans-t-funct);
+    display: inline-block;
 }
 
 .footer-box-address {
-    width: 231px;
     margin-right: 70px;
 }
 
@@ -529,10 +519,7 @@ ul {
     color: var(--white-color-90);
 }
 
-.footer-logo:hover,
-.footer-logo:focus,
-.address-map:hover,
-.address-map:focus,
+
 .address-email:focus,
 .address-email:hover,
 .address-tel:focus,
@@ -543,6 +530,7 @@ ul {
 
 .page-footer .container {
     display: flex;
+    align-items: baseline;
 }
 
 .join {
@@ -558,12 +546,6 @@ ul {
 
 .footer-box-links>.list {
     display: flex;
-}
-
-.footer-box-links {
-    display: block;
-    padding-top: 12px;
-    margin-bottom: 20px;
 }
 
 .footer-box-links .item:not(:last-child) {
@@ -707,9 +689,6 @@ ul {
 }
 
 
-
-
-
 /**
   |============================
   | Портфоліо
@@ -722,11 +701,12 @@ ul {
     gap: 30px;
 }
 
-.project-item {
+.project-item .link {
     transition: box-shadow var(--trans-dur) var(--trans-t-funct);
 }
 
-.project-item:hover {
+.project-item .link:hover,
+.project-item .link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
